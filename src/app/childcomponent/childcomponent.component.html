@@ -1,0 +1,23 @@
+<p>childcomponent works!</p>
+
+<table class='table'>
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>name</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>Click</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let customer of customers">
+            <td>{{customer.customerno}}</td>
+            <td>{{customer.name}}</td>
+            <td>{{customer.address}}</td>
+            <td>{{customer.city}}</td>
+            <td>{{customer.country}}</td>
+            <button (click)="selectedCustomer=customer">Click me</button>
+        </tr>
+    </tbody>
+</table>
